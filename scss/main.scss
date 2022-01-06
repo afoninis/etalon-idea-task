@@ -28,9 +28,10 @@ a {
         align-items: center;
 
         &__watermark {
+            background: url('../img/mobile/Group.svg');
             top: 60px;
-            width: 60px;
-            height: 30px;
+            width: 50px;
+            height: 23px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -60,10 +61,14 @@ a {
         &__bottom {
             position: absolute;
             bottom: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+
+            & a {
+                color: $color-full-white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
 
             &-p {
                 font-size: 10px;
@@ -80,7 +85,7 @@ a {
         align-items: center;
         flex-direction: column;
         height: 147px;
-        color:$color-full-black;
+        color: $color-full-black;
 
         &__header {
             color: $color-header;
@@ -114,7 +119,7 @@ a {
             text-transform: uppercase;
             color: $color-header;
         }
-        
+
         &__content {
             width: calc(100% - 28px);
             margin: 0 auto;
@@ -136,17 +141,18 @@ a {
                     .first {
                         width: 100%;
                         height: 80px;
-                        background: url(../img/world.png) center center;
+                        background: url(../img/world.svg) center center;
                         background-size: cover;
                     }
                 }
+
                 &:last-child {
                     margin-left: 4px;
 
                     .second {
                         width: 100%;
                         height: 80px;
-                        background: url(../img/yourself.png) center center;
+                        background: url(../img/yourself.svg) center center;
                         background-size: cover;
                     }
                 }
@@ -160,13 +166,11 @@ a {
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     color: #765151;
-                    margin-top: 16px;
-                    margin-bottom: 16px;
+                    margin: 16px 0;
                 }
 
                 &--p {
-                    padding-top: 16px;
-                    padding-bottom: 16px;
+                    padding: 16px 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -181,7 +185,7 @@ a {
             }
 
             &-button {
-                padding: 16px;
+                padding: 16px 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -190,9 +194,9 @@ a {
                 line-height: 130%;
                 text-align: center;
                 letter-spacing: 2.07954px;
-    
+
                 color: #F0E3DF;
-    
+
                 &--p {
                     color: #F0E3DF;
                     padding: 7px 21px;
@@ -225,6 +229,7 @@ a {
         &__content {
             margin-top: 16px;
             display: flex;
+
             &-text {
                 font-style: normal;
                 font-weight: 600;
@@ -233,7 +238,7 @@ a {
                 letter-spacing: 0.997932px;
                 color: #765151;
             }
-            
+
             &-items {
                 & a:first-child {
                     margin: 0 8px;
@@ -244,6 +249,7 @@ a {
 
     & .questions {
         background: $color-background-grey;
+
         &__header {
             font-style: normal;
             font-weight: normal;
@@ -254,9 +260,11 @@ a {
             color: $color-medium-grey;
             padding: 34px 0;
         }
+
         &__content {
             width: calc(100% - 34px);
             margin: 0 auto;
+
             &-category {
                 font-style: normal;
                 font-weight: normal;
@@ -268,18 +276,17 @@ a {
                 margin-bottom: 19px;
             }
 
-            &-items {
-            }
-
             &-item {
-                padding-bottom: 7px;
+                padding-bottom: 24px;
                 border-bottom: 0.853333px solid #E5E5E5;
+
 
                 &--pre {
                     position: relative;
                     margin-top: 8px;
-                    width: 271px;
+                    width: 100%;
                     display: flex;
+
                     &_title {
                         font-style: normal;
                         font-weight: normal;
@@ -287,9 +294,10 @@ a {
                         line-height: 15px;
                         color: #404040;
                     }
+
                     &_arrow {
                         position: absolute;
-                        right: -5px;
+                        right: 4px;
                         top: 5px;
                     }
                 }
@@ -304,17 +312,17 @@ a {
                     line-height: 12px;
                     color: #8E8E8E;
                 }
+            }
 
-                &:last-child {
-                    padding-bottom: 14px;
-                    border: none;
-                }
+            .td {
+                display: none;
             }
         }
     }
 
     & .footer {
         height: 60px;
+
         &__text {
             margin-left: 17px;
             height: 34px;
@@ -332,3 +340,5 @@ a {
         }
     }
 }
+
+@import 'responsive';
