@@ -277,7 +277,10 @@ a {
   line-height: 12px;
   color: #8E8E8E;
 }
-.main .questions__content .td {
+.main .questions__content .questions__content-item--text.txft {
+  display: block;
+}
+.main .questions__content .questions__content-item--text.txtd {
   display: none;
 }
 .main .footer {
@@ -466,8 +469,14 @@ a {
   .main .questions__content-item:last-child {
     margin-bottom: 100px;
   }
-  .main .questions__content .ft {
+  .main .questions__content .questions__content-item--text.txft {
     display: none;
+  }
+  .main .questions__content .questions__content-item--text.txtd {
+    display: block;
+  }
+  .main .questions__content .questions__content-item--pre_title.tltd {
+    font-weight: 700;
   }
   .main .questions__content:last-child {
     border-bottom: 1px solid #ADADAD;

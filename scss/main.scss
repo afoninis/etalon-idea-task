@@ -314,7 +314,11 @@ a {
                 }
             }
 
-            .td {
+            .questions__content-item--text.txft {
+                display: block;
+            }
+
+            .questions__content-item--text.txtd {
                 display: none;
             }
         }
